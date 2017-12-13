@@ -7,7 +7,7 @@ import terepasztal.annotations.UmlTodo;
 /**
  * Egy váltható sínelemet reprezentáló osztály. Egyszerre mindig csak két sínelemet köt össze.
  * A két összeköttetésben az egyik végpont azonos (az első).
- * Ha vált a váltó, a szomszéd sínelemek efelé a sínelem felé vezető összeköttetéseit letiltja, illetve engedélyezi (logikusan).
+ * Ha vált a váltó, a szomszéd sínelemek efelé a sínelem felé vezető összeköttetéseit letiltja, illetve engedélyezi (értelemszerűen).
  * Megvalósítja az Interactable interfészt, tehát ha a felhasználó pl. rákattint, akkor vált a váltó.
  */
 public class SwitchRailTile extends RailTile implements Interactable {
@@ -21,7 +21,7 @@ public class SwitchRailTile extends RailTile implements Interactable {
     private boolean firstLinkSelected = true;
 
     /** Létrehozza a váltót a lehetséges összeköttetések megadásával.
-     * A fix értelemszerűen azt az irányt jelenti, ami nem változik,
+     * A 'fix' értelemszerűen azt az irányt jelenti, ami nem változik,
      *   az 'a' illetve 'b' pedig a váltás hatására megváltozóakat.
      * */
     @UmlTodo @New

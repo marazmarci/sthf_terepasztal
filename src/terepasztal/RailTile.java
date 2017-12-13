@@ -34,7 +34,7 @@ public abstract class RailTile {
     public boolean forwardLocomotive(Locomotive loco) {
         RailTile railTileBehind = loco.getRailTileBehind();
         RailTile next = this.getNext(railTileBehind);
-        if (blockedOutputs.contains(next))
+        if (this.blockedOutputs.contains(next))
             return true;
         return next.accept(loco); // boolean crashed;
     }

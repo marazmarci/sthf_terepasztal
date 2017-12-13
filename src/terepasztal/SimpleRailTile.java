@@ -13,8 +13,8 @@ public class SimpleRailTile extends RailTile implements Interactable {
     @ToDo // test miatt public
     public RailLink link;
 
-    /** A szemafor */
-    private Semaphore semaphore;
+    /** A szemafor. */
+    private Semaphore semaphore = null;
 
     /** #inheritJavaDoc
      * így delegálja: return link.getBinding(prev); */

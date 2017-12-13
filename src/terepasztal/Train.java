@@ -17,7 +17,7 @@ public class Train {
     /** Az ez utána a vonatelem után láncolt következő vonatelem. */
     private Train wagonBehind;
 
-    /** A sínelem, amin ez a vonatelem elhelyezkedik. */
+    /** A sínelem, amin ez a vonatelem tartózkodik. */
     @NotUmlToDo // UML-en maradjon private!!!
     protected RailTile railTile;
 
@@ -36,7 +36,7 @@ public class Train {
             railTile.setOccupied(true);
     }
 
-    /** Beállítja a vonatelem új tartózkodási helyét, és beállítja elfoglaltra a sínelem állapotát (occupied). */
+    /** Beállítja a vonatelem új tartózkodási helyét, és beállítja elfoglaltra a sínelem állapotát (occupied). Illetve beállítja a régit nem elfoglaltra. */
     @Implemented
     private void setRailTile(RailTile r) {
         railTile.setOccupied(false);
