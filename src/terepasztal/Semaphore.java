@@ -24,9 +24,7 @@ public class Semaphore {
     public void toggle() {
         int idx = state.ordinal();
         SemaphoreState[] values = SemaphoreState.values();
-        int enumLength = values.length;
-        idx++;
-        if (idx >= enumLength)
+        if (++idx >= values.length)
             idx = 0;
         state = values[idx];
     }

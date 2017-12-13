@@ -44,7 +44,7 @@ public class Game {
      * Lépteti az updatable objektumokat, és a rákattintott interaktív objektumoknak meghívja az .interact() függvényét.
      */
     @Implemented
-    @TodoSeqDiagram
+    @SeqDiagramDone
     @UmlTodo // runGameLoop -> runGame
     public void runGame() {
         while (!gameOver) {

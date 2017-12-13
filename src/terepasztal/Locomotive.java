@@ -34,7 +34,7 @@ public class Locomotive extends Train implements Updatable {
 
     /** A szülő osztály ugyanilyen fejlécű függvényének leírása érvényes erre is.
      * Először eltárolja a jelenlegi railTile-t a railTileBehind változóban, majd delegálja a hívást super-nek. */
-    @TodoSeqDiagram
+    @SeqDiagramDone
     @Override
     public void moveTo(RailTile next) {
         railTileBehind = getRailTile();
@@ -50,7 +50,7 @@ public class Locomotive extends Train implements Updatable {
      *  (lásd szekvencia diagramon)
      *   */
     @Implemented
-    @TodoSeqDiagram
+    @SeqDiagramDone
     public void moveTo(SimpleRailTile next) {
         if (next.isSemaphoreClear())
             this.moveTo((RailTile) next);
@@ -63,7 +63,7 @@ public class Locomotive extends Train implements Updatable {
      *   sínelem (occupied). Ha igen, az azt jelenti, hogy ütközés történt (crashed). Ez esetben game.gameOver() hívás történik.
      * Működését lásd a szekvencia diagramon.
      * */
-    @TodoSeparateSeqDiagram
+    @SeqDiagramDone
     @Implemented
     @Override
     public void update() {

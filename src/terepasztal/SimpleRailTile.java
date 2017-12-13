@@ -37,7 +37,7 @@ public class SimpleRailTile extends RailTile implements Interactable {
     }
 
     /** Szabad jelzést ad-e a szemafor? */
-    @TodoSeqDiagram
+    @SeqDiagramDone
     @Implemented
     public boolean isSemaphoreClear() {
         return semaphore == null || semaphore.isClear();

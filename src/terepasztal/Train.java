@@ -56,7 +56,7 @@ public class Train {
      *    paraméterként megadva ennek a vonatelemnek az előrehaladás előtti pozícióját, ahova majd a (köv.-nek kell kerülnie)
      */
     @UmlTodo
-    @TodoSeqDiagram
+    @SeqDiagramDone
     @Implemented
     public void moveTo(RailTile next) {
         RailTile prev = getRailTile();

@@ -29,7 +29,7 @@ public abstract class RailTile {
      * Amennyiben a következő sínelem már foglalt, az bizony karambolt jelent,
      *   amit egy true logikai érték visszaadásával jelez a függvény (egyébként false).
      *   */
-    @TodoSeparateSeqDiagram
+    @SeqDiagramDone
     @Implemented
     public boolean forwardLocomotive(Locomotive loco) {
         RailTile railTileBehind = loco.getRailTileBehind();

@@ -1,9 +1,6 @@
 package terepasztal;
 
-import terepasztal.annotations.Implemented;
-import terepasztal.annotations.New;
-import terepasztal.annotations.TodoSeqDiagram;
-import terepasztal.annotations.UmlTodo;
+import terepasztal.annotations.*;
 
 /**
  * Egy kereszteződést reprezentáló osztály. Sínelem típusú. Két sín-összeköttetést tárol, amik egymástól függetlenek.
@@ -32,7 +29,7 @@ public class CrossRailTile extends RailTile {
 
     /** #inheritJavaDoc */
     @Implemented
-    @TodoSeqDiagram
+    @SeqDiagramDone
     @Override
     protected RailTile getNext(RailTile prev) {
         for (RailLink link : links) {
